@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Procedures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Hichua Veterinarian Hospital</h1>
+    <h2>Procedures</h2>
+    <ul>
+      <li><a href="pets.html">Pets</a></li>
+      <li><a href="pet_types.html">Pet Types</a></li>
+      <li><a href="veterinarians.html">Veterinarians</a></li>
+      <li><a href="appointments.html">Appointments</a></li>
+      <li><a href="procedures.html">Procedures</a></li>
+      <li><a href="exam_rooms.html">Exam Rooms</a></li>
+      <li><a href="owners.html">Owners</a></li>
+    </ul>
+
+    <div class="browse" style="display: block;">
+      <h4>Browse Procedures</h4>
+      <table border="1" cellpadding="10" class="display_table">
+        <tbody>
+          <tr>
+            <th></th>
+            <th></th>
+            <th>procedureID</th>
+            <th>proc_name</th>
+            <th>cost($)</th>
+          </tr>
+          <tr>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+            <td>1</td>
+            <td>neuter</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+            <td>2</td>
+            <td>spay</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+            <td>3</td>
+            <td>vaccinate</td>
+            <td>15</td>
+          </tr>
+             <tr>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+            <td>4</td>
+            <td>wellness exam</td>
+            <td>50</td>
+          </tr>
+             <tr>
+            <td><a href="#">Edit</a></td>
+            <td><a href="#">Delete</a></td>
+            <td>5</td>
+            <td>sick exam</td>
+            <td>50</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="insert_proc" style="display: block;">
+      <form method="POST" id="insertProc">
+        <legend>Add Procedure</legend>
+        <fieldset>
+          <label>proc_name</label>
+          <input type="text" name="procNameInsert">
+        </fieldset>
+        <input class="btn" type="submit" id="insertsubmit" value="Add Procedure">
+      </form>
+    </div>
+
+    <div id="update_proc" style="display: block;">
+      <form METHOD="POST" id="updateProc">
+          <legend>Update Procedure</legend>
+          <fieldset>
+            <label>Id:</label> 1 
+            <label>proc_name</label>
+            <input type="text" name="procNameUpdate" value="neuter">
+          </fieldset>
+          <input class="btn" type="submit" id="updatesubmit" value="Update Procedure">
+        </form>
+    </div>
+    <script src="" async defer></script>
+  </body>
+</html>

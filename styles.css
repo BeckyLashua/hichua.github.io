@@ -1,0 +1,19 @@
+.display_table {
+  background-color: rgb(225, 238, 234);
+}
+
+table {
+  border: "1";
+}
+
+.insert {
+  display: block;
+}
+
+.update {
+  display: block;
+}
+
+.delete {
+  display: block;
+}
